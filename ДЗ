@@ -1,0 +1,14 @@
+print(input("Введите число:"))
+
+
+
+print(sum(map(int,list(input("Выести цифры: ")))))
+input() # для ввода
+list(input()) # разбить введенное на цифры
+map(int, list(input())) # каждую цифру привести к целому (у нас ведь изначально текст)
+sum(map(int, list(input()))) # посчитать сумму цифр
+print(sum(map(int, list(input("Выести цифры: "))))) # вывести сумму
+
+
+x=123
+print(sum(map(int,str(x))))
